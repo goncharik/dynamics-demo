@@ -2,7 +2,7 @@
 
 This project shows how simple it's to add physics animations to your app with build in UIKit Dynamics physics engine.
 
-This is demo project for my blog post about Dynamics and motion design - [Motion Design. It's simpler than you think](http://tulusha.com/motion-design-simple)
+This is demo project for my blog post about Dynamics and motion design - [Motion Design. It's simpler than you think](http://tulusha.com/motion-design-is-simple)
 
 Please read visit [my website](http://tulusha.com) to find out more!
 
