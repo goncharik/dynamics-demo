@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dynamics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIP-PU-Spr">
+                                <rect key="frame" x="20" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="3fs-Hp-Np3"/>
+                                    <constraint firstAttribute="height" constant="44" id="r6y-se-Yo5"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetBoxes" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQd-aA-Gsk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mym-vB-3SI">
+                                <rect key="frame" x="536" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Pll-Np-o0M"/>
+                                    <constraint firstAttribute="width" constant="44" id="Tfo-tz-30F"/>
+                                </constraints>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="addRandomBox" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDL-PM-zpt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mym-vB-3SI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="LW4-Mt-TWJ"/>
+                            <constraint firstAttribute="trailing" secondItem="mym-vB-3SI" secondAttribute="trailing" constant="20" id="YT9-jy-QDg"/>
+                            <constraint firstItem="HIP-PU-Spr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="tTh-aO-Eed"/>
+                            <constraint firstItem="HIP-PU-Spr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="uWD-cl-13T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="mym-vB-3SI" id="Fwo-Oj-MNw"/>
+                        <outlet property="resetButton" destination="HIP-PU-Spr" id="qIv-0x-nb5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
